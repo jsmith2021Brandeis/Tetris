@@ -98,7 +98,7 @@ public class Game {
 		display.output(finalMessage);
 		while(!timer.elapsed(2000)) {}
 		//add the game score to list of highscores and display Them
-		highScores.addHighScore("TEST", timeBonus+board.getScore());
+		highScores.addHighScore("Player", timeBonus+board.getScore());
 		display.output("HIGHSCORES ON TETRIS\n"+highScores.getHighScores());
 		highScores.writeToFile();
 		while(!timer.elapsed(2000)) {}

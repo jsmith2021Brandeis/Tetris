@@ -21,6 +21,7 @@ public class GUIClient {
 
 		Game g = new Game(display);
 		g.playGame();
+		System.exit(1);
 
 	}
 
