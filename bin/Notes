@@ -1,0 +1,110 @@
+12.29.2018 to do: ask user for name during high score, size winidow correctly
+
+
+/**
+		 * inserts Tommy after samuel and ensures that list is correctly structured
+		 * checks if data is inserted after Samuel
+		 */
+		@Test
+		public void testInsertAfter() {
+			list.insert("Tommy", "Samuel");
+			String correctString="Jacob--> Samuel--> Tommy--> Susan";
+			assertEquals(correctString,list.toString());
+		}
+		
+		/**
+		 * inserts bonny to list
+		 * to see if insert method can handle when head is null
+		 */
+		@Test
+		public void testInsertasFirst() {
+			list=new LinkedList<>();
+			list.insert("Bonny");
+			String correctString="Bonny";
+			assertEquals(correctString,list.toString());
+		}
+		
+		/**
+		 * inserts bonny to list and then clyde and checks that list is correclty structured
+		 * to see if insert inserts correctly at end of list
+		 */
+		@Test
+		public void testInsertatEnd() {
+			list=new LinkedList<>();
+			list.insert("Bonny");
+			list.insert("Clyde");
+			String correctString="Bonny--> Clyde";
+			assertEquals(correctString,list.toString());
+		}
+		
+		/**
+		 * ensures that the toString method is correct
+		 * which can also be used to check state of LinkedList
+		 */
+		@Test
+		public void testToString() {
+			String correctString="Jacob--> Samuel--> Susan";
+			assertEquals(correctString,list.toString());
+			
+		}
+
+
+
+
+
+
+
+
+
+
+
+To Do:
+Learn swing to build game class
+
+/*
+ * new Tetris piece piece p=new piece(" [] \n[][][]"); piece p=new
+ * piece("01000111"); Tetris game pieces
+ * 
+ * [] [][][]
+ * 
+ * 
+ * 0 0 1 0 
+ * 0 1 1 1
+ *
+ *    []
+ *  [][][]
+ *  
+ *  []
+ *  [][]
+ *  []
+ *  
+ *      []
+ *    [][]
+ *      []
+ *      
+ * [][][]
+ *   []
+ * 
+ * [] [][][]
+ * 
+ * 1 0 0 0 1 1 1 0
+ * 
+ * [][][][]
+ * 
+ * 0 0 0 0 1 1 1 1
+ * 
+ * [][] [][]
+ * 
+ * 1 1 0 0 0 0 1 1
+ 
+ 12.21.2018 2:56 AM This is the first time I've got the game to anything close to a recognizable game of tetris,
+ maybe this has been 10 hours of programming?
+ * 
+ * 
+ * 0010
+ * 0111
+ * for 1, row 0 col 2 index 2
+ * for last 0 row 0 col 3 index 3
+ * for next 1, row 1 col 1 but index 4
+ * (row*4)+col
+ * 
