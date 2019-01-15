@@ -3,7 +3,7 @@ Tetris Project
 + This project simulates a game of tetris using the [swing](https://docs.oracle.com/javase/tutorial/uiswing/index.html) application of java
 + A game is played by running the main method of the GUI Client class
 	+ Then the controls are displayed
-	+ ![controls](controls.PNG)
+	+ ![controls](controls.png)
 	+ The game is played
 	+ ![gameplay](GamePlay.PNG)
 	+ And the high scores are displayed
